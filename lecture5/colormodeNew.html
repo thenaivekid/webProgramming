@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+    </head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelectorAll('button').forEach(function(button){
+                button.onclick = function(){
+                    document.querySelector('body').style.backgroundColor = button.dataset.bgcolor;
+                    document.querySelector('h1').style.color = button.dataset.color;
+                };
+            });
+           
+            
+        });
+    </script>   
+    <body>
+        <h1>Hello ashok</h1>
+        <select >
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </body>
+</html>

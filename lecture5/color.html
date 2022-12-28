@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+    </head>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelectorAll('button').forEach(function(button){
+                button.onclick = function(){
+                    document.querySelector('body').style.backgroundColor = button.dataset.bgcolor;
+                    document.querySelector('h1').style.color = button.dataset.color;
+                };
+            });
+           
+            
+        });
+    </script>   
+    <body>
+        <h1>Hello ashok</h1>
+        <button data-bgcolor ="aqua" data-color="black">light mode</button>
+        <button data-bgcolor="black" data-color="white">dark mode</button>
+    </body>
+</html>

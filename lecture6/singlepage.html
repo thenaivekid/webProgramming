@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Single page
+        </title>
+
+        <style>
+            div {
+                display: none;
+            }
+        </style>
+
+        <script>
+            function showPage(page){
+                document.querySelectorAll('div').forEach (div =>{
+                    div.style.display = 'none';
+                });
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function(button){
+                        showPage(this.dataset.page)
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <button data-page="first">page1</button>
+        <button data-page="page2">page2</button>
+        <button data-page="page3">page3</button>
+        <div id="first"  >this is page 1.</div>
+        <div id="page2" >this is page 2.</div>
+        <div id="page3" >this is page 3.</div>
+    </body>
+</html>

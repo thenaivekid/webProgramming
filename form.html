@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+    </head>
+    <body>
+        <h1>
+             submit the following:
+        </h1>
+        <form>
+            <input type="text" placeholder="Full name" name="full_name">
+            <input type="password" placeholder="Password">
+            <div>
+                <h3>What's your fav color?</h3>
+                <input type="radio" name="color" value="red">Red
+                <input type="radio" name="color" value="blue">Blue
+                <input type="radio" name="color" value="green">Green
+                <input type="radio" name="color" value="yellow">Yellow
+            </div>
+            <br>
+            <div>
+                <input list="countries" name="country" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Nepal">
+                    <option value="India">
+                    <option value="Maaldieves">
+                    <option value="Bangladesh">
+                    <option value="Sri Lanka">
+                    <option value="Afghanistan">
+                    <option value="Pakistan">
+                </datalist>
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+    </head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', ()=> {
+            document.querySelector('select').onchange= function(){
+                document.querySelector('body').style.backgroundColor = this.value; 
+            }
+        });
+
+    </script>   
+    <body>
+        <h1>Hello ashok</h1>
+        <select >
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </body>
+</html>

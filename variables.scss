@@ -1,0 +1,34 @@
+// // 
+// *sass-> a new language. more like extension of css.  the file extension is .scss  
+// sass is not supported in browsers. 
+// we need to compile it and make a css file out of it and link that to the html.
+// intstall sass in th computer and compile it to css.   ```sass variables.scss:variables.css```
+
+// we can use sass watch variables.scss:variable.css to continuously update compiled 
+// css as changes are made in .scss
+
+// scss has nicer sytax for nested elements
+// like
+// div{
+//     li{
+//         color: blue;
+
+//     }
+//     ul {
+//         color: green;
+
+//     }
+// }
+
+//creating a variable to reuse it.
+$color: #03af1ab4;
+
+ul{
+    font-size: 15px;
+    color: $color;
+}
+
+ol{
+    font-size: 25px;
+    color: $color;
+}

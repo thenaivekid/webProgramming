@@ -1,0 +1,24 @@
+* how to take returned value from pop() method ->use it in list
+* use of decorators : for functions with argument and return value
+* self.name = name and self.name = []  (-> means list) what are these while initiating a class
+* print(f"{airport['name']} ({airport['code']}) is in {airport['country']}.")     #here i find the difference between " " 
+and ' ' in python for items in dictionary.
+*how to take input and return value.
+*look at some easy python projects
+*make authentication system in python
+*learn how to print next thing in the same line. end = ""
+*when do we need to init the class and when we don't
+*use oop in a project
+*dunder methods
+
+* raw input and raw output
+
+*media querry in css for making page more responsive [adjusting for different screen size]
+*flexbox
+
+
+*sass-> a new language. more like extension of css.  the file extension is .scss  sass is not supported in browsers. 
+we need to compile it and make a css file out of it and link that to the html.
+intstall sass in th computer and compile it to css.   ```sass variables.scss:variables.css```
+
+*learn to make cookies to store user data

@@ -1,0 +1,20 @@
+to start project
+    django-admin startproject "<project_name>"
+
+to startapp[in the directory containing manage.py file]
+    python manage.py startapp "<app_name>"
+
+to run server
+    python manage.py runserver
+
+to create migration
+    python manage.py makemigrations
+    python manage.py migrate
+
+to run tests
+    python manage.py test
+
+to create admin account
+    python manage.py createsuperuser
+    [do once migration is done]
+

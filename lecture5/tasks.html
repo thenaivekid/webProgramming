@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Todo list</title>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                
+            //by default set submit disabled
+                document.querySelector('#submit').disabled = true;
+
+                document.querySelector('#task').onkeyup= ()=>{
+                document.querySelector('#submit').disabled = false;
+
+                };
+
+                document.querySelector('form').onsubmit = ()=> {
+
+                    
+
+                    const task = document.querySelector('#task').value;
+
+                    const li = document.createElement('li');
+                    li.innerHTML= task;
+
+                    document.querySelector('#tasks').append(li);
+                    document.querySelector('#task').value= '';
+
+                    return false;// doesn't actually  submits the form its only on client side.
+
+                    
+            };
+            });
+            
+        </script>
+    </head>
+
+    <body>
+        <h1>Tasks</h1>
+        <ul id="tasks" >
+            
+        </ul>
+        <form >
+            <input type="text" id="task" placeholder="New Task">
+            <input id="submit"  type="submit">
+        </form>
+    </body>
+</html>

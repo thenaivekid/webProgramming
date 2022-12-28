@@ -1,0 +1,59 @@
+
+body {
+    background-color: #E3FCBF;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.content,#branding, #progress, #nav,#links {
+    background-color:#b8f1b0 ;
+    color: black;
+}
+
+
+button{
+    background-color: #b8f1b0;
+    color: rgb(110, 41, 110);
+}
+
+#copyright{
+    text-align: center;
+}
+
+#branding{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+}
+
+#name{
+    color:rgb(215, 95, 95)
+}
+
+#profile{
+    padding-left:950px ;
+}
+
+/* to animate the name */
+@keyframes move {
+    0%{
+        left: 20%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left:20%;
+    }
+
+}
+
+#name {
+position: relative;
+animation-name:move ;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}

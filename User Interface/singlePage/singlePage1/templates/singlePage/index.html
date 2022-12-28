@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+
+        <script>
+
+            
+
+            function showsection(section){
+                fetch(`section/${section}`)
+                .then (response =>response.text())
+                .then(text =>{
+                    console.log(text);
+                    document.querySelector('#content').innerHTML = text;    
+                });
+            } 
+            
+            window.onpopstate = function(event){
+                showsection(event.state.section);
+            }
+            
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function() {
+                        const section = this.dataset.section;
+                        history.pushState({section: section},"",`section${section}`);
+                        showsection(section);
+                    };
+                });
+            });
+        </script>
+
+        <title>single section</title>
+    </head>
+    <body>
+        <h1>hello</h1>
+        <button data-section="1">section 1</button>
+        <button data-section="2">section 2</button>
+        <button data-section="3">section 3</button>
+        <button data-section="4">section 4</button>
+        <button data-section="5">section 5</button>
+        
+        <div id="content"></div>
+    </body>
+</html>

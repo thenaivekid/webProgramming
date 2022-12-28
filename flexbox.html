@@ -1,0 +1,44 @@
+<!-- flexbox adjusts the divs of html according to the size of screen -->
+<!-- shrink the size of chrome window and the no, of divs shown is adjusted -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flexbox</title>
+    <style>
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* addressing the child div */
+        #container > div{
+            background-color: springgreen;
+            font-size: large;
+            padding: 20px;
+            width: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+        <div>this is sample text lol</div>
+    </div>
+</body>
+</html>

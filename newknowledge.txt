@@ -1,0 +1,59 @@
+--oop vocab--
+class—Tell Python to make a new kind of thing.
+ • object—Two meanings: the most basic kind of thing, and any instance of some thing.
+ • instance—What you get when you tell Python to create a class.
+ • def—How you defi ne a function inside a class.
+ • self—Inside the functions in a class, self is a variable for the instance/object being accessed.
+ • inheritance—The concept that one class can inherit traits from another class, much like 
+you and your parents.
+ • composition—The concept that a class can be composed of other classes as parts, much 
+like how a car has wheels.
+ • attribute—A property classes have that are from composition and are usually variables.
+ • is- a—A phrase to say that something inherits from another, as in a “salmon” is- a “fi sh.”
+ • has- a—A phrase to say that something is composed of other things or has a trait, as in “a 
+salmon has- a mouth.”
+
+
+--python to english--
+class X(Y) “Make a class named X that is- a Y.”
+class X(object): def __init__(self, J) “class X has- a __init__ that takes self and J parameters.”
+class X(object): def M(self, J) “class X has- a function named M that takes self and J parameters.”
+foo = X() “Set foo to an instance of class X.”
+foo.M(J) “From foo get the M function, and call it with parameters self, J.”
+foo.K = Q “From foo get the K attribute, and set it to Q.”
+
+
+--OOP--An important concept that you have to understand is the difference between a class and an 
+object. The problem is, there is no real “difference” between a class and an object. They 
+are actually the same thing at different points in time. I will demonstrate by a Zen koan:
+What is the difference between a Fish and a Salmon?
+Did that question sort of confuse you? Really sit down and think about it for a minute. I mean, a 
+Fish and a Salmon are different but, wait, they are the same thing, right? A Salmon is a kind of Fish, so 
+I mean it’s not different. But at the same time, because a Salmon is a particular type of Fish, 
+it’s actually different from all other Fish. That’s what makes it a Salmon and not a Halibut. So a 
+Salmon and a Fish are the same but different. Weird.
+This question is confusing because most people do not think about real things this way, but they 
+intuitively understand them. You do not need to think about the difference between a Fish and 
+a Salmon because you know how they are related. You know a Salmon is a kind of Fish and that 
+there are other kinds of Fish without having to understand that.
+Let’s take it one step further: say you have a bucket full of three Salmon and, because you are 
+a nice person, you have decided to name them Frank, Joe, and Mary. Now, think about this 
+question:
+What is the difference between Mary and a Salmon?
+Again, this is a weird question, but it’s a bit easier than the Fish versus Salmon question. You know that 
+Mary is a Salmon, and so she’s not really different. She’s just a specifi c “instance” of a Salmon. Joe and 
+Frank are also instances of Salmon. What do I mean when I say “instance”? I mean they were created 
+from some other Salmon and now represent a real thing that has Salmon- like attributes.
+Now for the mind- bending idea: Fish is a class, and Salmon is a class, and Mary is an object. 
+Think about that for a second. Alright let’s break it down real slow and see if you get it.
+A Fish is a class, meaning it’s not a real thing, but rather a word we attach to instances of things 
+with similar attributes. Got fi ns? Got gills? Lives in water? Alright it’s probably a Fish.
+Someone with a PhD then comes along and says, “No, my young friend, this Fish is actually Salmo
+salar, affectionately known as a Salmon.” This professor has just clarifi ed the Fish further and 
+made a new class called “Salmon” that has more specifi c attributes. Longer nose, reddish fl esh, 
+big, lives in the ocean or fresh water, tasty? OK, probably a Salmon
+Finally, a cook comes along and tells the PhD, “No, you see this Salmon right here, I’ll call her Mary 
+and I’m going to make a tasty fi llet out of her with a nice sauce.” Now you have this instance of a 
+Salmon (which also is an instance of a Fish) named Mary turned into something real that is fi lling 
+your belly. It has become an object.
+There you have it: Mary is a kind of Salmon that is a kind of Fish. object is a class is a class
